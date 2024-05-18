@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ramon L. Diaz Ortiz - Personal Webpage</title>
-         <!-- Bootstrap CSS -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramon L. Diaz Ortiz - Personal Webpage</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
@@ -13,128 +12,261 @@
         }
         header {
             background-color: #1e1e1e;
-            padding: 60px 0;
-            text-align: center;
+            padding: 20px 0;
         }
         header h1 {
             margin: 0;
-            color: #7595c5a9;
+            color: #f0f0f0;
+        }
+        header p {
+            margin: 0;
+            color: #a0a0a0;
+            font-style: italic;
         }
         nav {
-            background-color: #3a3958;
+            margin-bottom: 20px;
         }
         nav a {
-            color: #e0e0e0 !important;
-            font-weight:bold;
+            color: #121212 !important;
+            font-weight: bold;
         }
         nav a:hover {
-            background-color: #575757 !important;
-            color: white !important;
+            color: #1e1e1e !important;
         }
-        section {
-            padding: 40px 0;
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
+        .table-container {
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .table-dark {
+            color: #e0e0e0;
         }
         footer {
             background-color: #1e1e1e;
             text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            padding: 20px;
+        }
+        footer p {
+            margin: 0;
+            color: #a0a0a0;
+        }
+        .justified-text {
+            text-align: justify;
         }
     </style>
 </head>
 <body>
-<header>
+
+<!-- Header -->
+<header class="container text-center">
     <h1>Ramon L. Diaz Ortiz</h1>
-    <p>Game Programmmer | AI & ML Enthusiast | Movie Buff | Gamer</p>
-</header>      
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">Home</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
+    <p>Game Programmer | AI & ML Enthusiast | Movie Buff | Gamer</p>
+</header>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">Brand</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#about" onclick="smoothScroll('about')">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about" onclick="smoothScroll('about')">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services" onclick="smoothScroll('services')">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact" onclick="smoothScroll('contact')">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<div class="container my-4">
+    <div class="row">
+        <!-- Main Column (80% width) -->
+        <div class="col-lg-8 col-md-8 col-sm-12">
+            <section id="about">
+                <div class="section-title">
+                    <h2>About Me</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="path/to/your/image.jpg" class="img-fluid rounded" alt="Profile Picture">
+                    </div>
+                    <div class="col-md-8">
+                        <p class="justified-text">Hi! I'm Ramon, I am an aspiring AI Engineer with over 3 months of experience in the Video Game Industry. I am employed as Game Programmer at Warrior Heart Studio, concurrently, I am studying Master of Science in Computer Science with a focus on Artificial Intelligence and Machine Learning at Drexel University, anticipating graduation in 2025. Since childhood, I’ve been enchanted by the world of gaming, which opened the first doors of technology to me. These early encounters ignited a lifelong interest that has done far more than provided entertainment. I am a member of International Game Developer Association (IGDA), Baltimore Indie GameDevs, and I am an active member of these organizations. The fascination shaped my career interest but also has driven me to continuously explore and adopt new skills and technologies relevant to gaming and AI.</p>
+                        
+                        <p class="justified-text">I bring a wealth of experience from my time at Warrior Heart Studio as a Game Programmer, where I honed my skills in C++, Artificial Intelligence, and Visual Scripting. These roles not only provided me with a solid foundation in the practical application of Artificial Intelligence but also allowed me to develop a deeper understanding of the industry’s dynamics and the challenges faced by professionals in the field. Also, I have accomplished certification Basic Python from Hacker Rank, ChatGPT chatbot for Salesforce Admin and Development ChatGPT from Udemy, Gaming QA: Basics of testing games from Udemy, Leader Certification from The National Leader Association and Success. My hands-on experience, combined with my theoretical knowledge, makes me well-equipped to bring value to any team in the Video Game Industry.</p>
+                        
+                        <p class="justified-text">I am on a continuous journey of professional development and learning in the field of Artificial Intelligence. My immediate goal is to secure a position as an AI Engineer, where I can apply and further develop my skills while contributing positively to a small tech company. Looking ahead, I envision myself taking a leadership role that allows me to drive innovative projects and initiatives, ultimately contributing to the advancement of the industry. My long-term aspirations include not only becoming an expert in my field but also being a mentor and guide for aspiring professionals. Through a combination of practical experience, continuous learning, and collaboration with talented colleagues, I aspire to make a significant impact in the Artificial Intelligence field, participating, and eventually leading projects that are both challenging and rewarding.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects">
+                <div class="section-title">
+                    <h2>Projects</h2>
+                </div>
+                <ul>
+                    <li><strong>Project 1:</strong> Description of project 1.</li>
+                    <li><strong>Project 2:</strong> Description of project 2.</li>
+                    <li><strong>Project 3:</strong> Description of project 3.</li>
+                    <!-- Add more projects as needed -->
                 </ul>
-            </div>
+            </section>
+
+            <section id="contact">
+                <div class="section-title">
+                    <h2>Contact</h2>
+                </div>
+                <p>You can reach me at <a href="mailto:your.email@example.com">your.email@example.com</a>.</p>
+            </section>
         </div>
-    </nav>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Hi! I'm Ramon, I am an aspiring AI Engineer with over 3 months of experience in the Video Game Industry.
-                I am employed as Game Programmer at Warrior Heart Studio,Concurrently, I am studying Master of  Science
-                in Computer Science with a focus on Artificial Intelligence and Machine Learning at Drexel University, 
-                anticipating graduation in 2025. Since childhood, I’ve been enchanted by the world of gaming, which opened 
-                the first doors of technology to me. These early encounters ignited a lifelong interest that has done far
-                more than provided entertainment. I am member of International Game Developer Association(IGDA), 
-                Baltimore Indie GameDevs and I am activate member of this organizations. The fascination shaped my career 
-                interest but also has driven me to continuously explore and adopt new skills and technologies relevant to gaming and AI.
-            </p>
+        <!-- Side Column (20% width) -->
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <section id="certificates">
+                <div class="section-title">
+                    <h2>Certificates</h2>
+                </div>
+                <div class="table-container">
+                    <table class="table table-dark table-striped">
+                        <thead>
+                            <tr>
+                                <th>Certificate</th>
+                                <th>Provider</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Basic Python</td>
+                                <td>Hacker Rank</td>
+                            </tr>
+                            <tr>
+                                <td>ChatGPT Chatbot for Salesforce Admin and Development</td>
+                                <td>Udemy</td>
+                            </tr>
+                            <tr>
+                                <td>Gaming QA: Basics of Testing Games</td>
+                                <td>Udemy</td>
+                            </tr>
+                            <tr>
+                                <td>Leader Certification</td>
+                                <td>The National Leader Association and Success</td>
+                            </tr>
+                            <!-- Add more certificates as needed -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
 
-            <p>
-                I bring a wealth of experience from my time at Game Warrior Heart Studio Game Programmer, where I honed my skills in C++, 
-                Artificial Intelligence, and Visual Scripting. These roles not only provided me with a solid foundation in the practical 
-                application of Artificial Intelligence but also allowed me to develop a deeper understanding of the industry’s dynamics and
-                the challenges faced by professionals in the field. Also, I have accomplished certification Basic Python from Hacker Rank, 
-                ChatGPT chatbot for SalesForce Admin and Development ChatGPT from Udemy, Gaming QA: Basic of testing games from Udemy,
-                Leader Certification from The National Leader Association and Success. My hands-on experience, combined with my theoretical knowledge, 
-                makes me well-equipped to bring value to any team in the Video Game Industry.
-            </p>
-
-            <p> I am on a continuous journey of professional development and learning in the field of Artificial Intelligence. 
-                My immediate goal is to secure a position as an AI Engineer, where I can apply and further develop my skills while
-                contributing positively to a small tech company. Looking ahead, I envision myself taking a leadership role that allows
-                me to drive innovative projects and initiatives, ultimately contributing to the advancement of the industry. My long-term 
-                aspirations include not only becoming an expert in my field but also being a mentor and guide for aspiring professionals. 
-                Through a combination of practical experience, continuous learning, and collaboration with talented colleagues, I aspire to make
-                a significant impact in the Artificial Intelligence field, participating, and eventually leading projects that are both challenging
-                and rewarding. </p>
+            <section id="university">
+                <div class="section-title">
+                    <h2>University</h2>
+                </div>
+                <div class="table-container">
+                    <table class="table table-dark table-striped">
+                        <thead>
+                            <tr>
+                                <th>University</th>
+                                <th>Course</th>
+                                <th>Year</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Drexel University</td>
+                                <td>MS in Computer Science</td>
+                                <td>2023 - 2025</td>
+                            </tr>
+                            <!-- Add more university details as needed -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
         </div>
-    </section>
+    </div>
+</div>
 
-    <section id="project" class="container">
-        <h2>Projects</h2>
-        <ul>
-            <li>Project 1</li>
-            <li>Project 2</li>
-            <li>Project 3</li>
-        </ul>
-    </section>
+<!-- Additional Content with Evenly Spaced Columns -->
+<div class="container my-4">
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <h3>Column 1</h3>
+            <p>Content for the first column goes here.</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <h3>Column 2</h3>
+            <p>Content for the second column goes here.</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <h3>Column 3</h3>
+            <p>Content for the third column goes here.</p>
+        </div>
+    </div>
+</div>
 
-    <section id="contact" class="container">
-        <h2>Contact</h2>
-        <p>You can reach at email<a href="mailto:rldiaz14.1@gmail.com"> Ramon L</a>.</p>
-    </section>
+<!-- Grid with 6 Columns and 6 Rows -->
+<div class="container my-4">
+    <div class="row">
+        <!-- 6 Columns -->
+        <div class="col-lg-2 col-md-4 col-sm-6">
+            <h3>Col 1</h3>
+            <p>Row 1 content</p>
+            <p>Row 2 content</p>
+            <p>Row 3 content</p>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+            <!-- Content for column 2 -->
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+            <!-- Content for column 3 -->
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+            <!-- Content for column 4 -->
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+            <!-- Content for column 5 -->
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+            <h3>Col 6</h3>
+            <p>Row 1 content</p>
+            <p>Row 2 content</p>
+            <p>Row 3 content</p>
+        </div>
+    </div>
+</div>
 
-    <!-- Bootstrap JS and dependencies -->
+<!-- Footer -->
+<footer class="container">
+    <div class="row">
+        <div class="col-12">
+            <p class="text-center">© 2024 Ramon L. Diaz Ortiz. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
 <script>
     function smoothScroll(targetId) {
         document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
     }
 </script>
-
-    
 </body>
 </html>
-
